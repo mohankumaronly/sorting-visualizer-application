@@ -1,5 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:sample01/my-reference/Animation_visualizer/algorithms/Bitonic_sort_algorithm.dart';
+import 'package:sample01/my-reference/Animation_visualizer/algorithms/Quick_sort_algorithm.dart';
 import 'package:sample01/my-reference/Animation_visualizer/algorithms/bubble_sort_algorithm.dart';
+import 'package:sample01/my-reference/Animation_visualizer/algorithms/bucket_sort_algorithm.dart';
+import 'package:sample01/my-reference/Animation_visualizer/algorithms/counting_sort_algorithm.dart';
+import 'package:sample01/my-reference/Animation_visualizer/algorithms/heap_sort_algorithm.dart';
+import 'package:sample01/my-reference/Animation_visualizer/algorithms/insertion_sort_algorithm.dart';
+import 'package:sample01/my-reference/Animation_visualizer/algorithms/merge_sort_algorithm.dart';
+import 'package:sample01/my-reference/Animation_visualizer/algorithms/radix_sort_algorithm.dart';
+import 'package:sample01/my-reference/Animation_visualizer/algorithms/selection_sort_algorithm.dart';
+import 'package:sample01/my-reference/Animation_visualizer/algorithms/shell_sort_algorithm.dart';
 import 'package:sample01/screens/sorting/sorting_animation.dart';
 import 'package:sample01/widgets/algorithm_card.dart';
 import 'package:sample01/widgets/difficulty_tabs.dart';
@@ -29,26 +39,73 @@ class _HomeScreenState extends State<HomeScreen> {
       'difficulty': 'Easy',
       'algorithm': bubbleSort, // Reference to the actual algorithm function
     },
+     {
+      'name': 'Selection Sort',
+      'description': 'A simple comparison-based sorting algorithm. It repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order.',
+      'difficulty': 'Easy',
+      'algorithm': selectionSort, // Reference to the actual algorithm function
+    },
+    {
+      'name': 'Insertion Sort',
+      'description': 'A simple comparison-based sorting algorithm. It repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order.',
+      'difficulty': 'Easy',
+      'algorithm': insertionSort, // Reference to the actual algorithm function
+    },
     {
       'name': 'Quick Sort',
       'description': 'An efficient, in-place sorting algorithm. Developed by Tony Hoare.',
       'difficulty': 'Medium',
-      'algorithm': null, // Placeholder for unimplemented algorithms
-      'isComingSoon': true,
+      'algorithm': quickSort, // Placeholder for unimplemented algorithms
+      // 'isComingSoon': true,
     },
     {
       'name': 'Merge Sort',
       'description': 'A divide and conquer algorithm. It divides input array into two halves, calls itself for the two halves, and then merges the two sorted halves.',
       'difficulty': 'Medium',
-      'algorithm': null,
-      'isComingSoon': true,
+      'algorithm': mergeSort,
+      // 'isComingSoon': true,
+    },
+     {
+      'name': 'Shell Sort',
+      'description': 'A divide and conquer algorithm. It divides input array into two halves, calls itself for the two halves, and then merges the two sorted halves.',
+      'difficulty': 'Medium',
+      'algorithm': shellSort,
+      // 'isComingSoon': true,
     },
     {
       'name': 'Heap Sort',
       'description': 'A comparison-based sorting technique based on binary heap data structure.',
       'difficulty': 'Hard',
-      'algorithm': null,
-      'isComingSoon': true,
+      'algorithm': heapSort,
+      // 'isComingSoon': true,
+    },
+    {
+      'name': 'Counting Sort',
+      'description': 'A comparison-based sorting technique based on binary heap data structure.',
+      'difficulty': 'Hard',
+      'algorithm': countingSort,
+      // 'isComingSoon': true,
+    },
+    {
+      'name': 'Radix Sort',
+      'description': 'A comparison-based sorting technique based on binary heap data structure.',
+      'difficulty': 'Hard',
+      'algorithm': radixSort,
+      // 'isComingSoon': true,
+    },
+    {
+      'name': 'Bucket Sort',
+      'description': 'A comparison-based sorting technique based on binary heap data structure.',
+      'difficulty': 'Hard',
+      'algorithm': bucketSort,
+      // 'isComingSoon': true,
+    },
+    {
+      'name': 'Bitonic Sort',
+      'description': 'A comparison-based sorting technique based on binary heap data structure.',
+      'difficulty': 'Hard',
+      'algorithm': bitonicSort,
+      // 'isComingSoon': true,
     },
     // Add other algorithm entries here
   ];
