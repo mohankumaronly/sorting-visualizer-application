@@ -72,3 +72,5 @@
 // reviewing logic soon
 
 // checking stability
+
+// quick note to self
