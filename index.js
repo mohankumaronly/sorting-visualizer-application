@@ -140,3 +140,5 @@
 // simple daily change
 
 // updated naming
+
+// adjusting structure
