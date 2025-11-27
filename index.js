@@ -134,3 +134,5 @@
 // quick note to self
 
 // small tweak to function
+
+// adjusting structure
