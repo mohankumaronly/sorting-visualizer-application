@@ -156,3 +156,5 @@
 // adjusting structure
 
 // adjusting structure
+
+// checking stability
